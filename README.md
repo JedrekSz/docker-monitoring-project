@@ -5,6 +5,9 @@
 Projekt prezentuje wdrożenie oraz monitorowanie aplikacji webowej w środowisku kontenerowym.
 Zostało zbudowane środowisko wielokontenerowe z wykorzystaniem Docker Compose, obejmujące aplikację, bazę danych oraz system monitoringu.
 
+<img width="1552" height="755" alt="image" src="https://github.com/user-attachments/assets/8093a060-53a1-4360-bebf-5e20d5e58c5c" />
+
+
 ## Architektura
 
 * WordPress – aplikacja webowa
@@ -23,9 +26,9 @@ Zostało zbudowane środowisko wielokontenerowe z wykorzystaniem Docker Compose,
 
 ## Funkcjonalności
 
-* uruchomienie aplikacji w architekturze wielokontenerowej
+* uruchomienie aplikacji w architekturze docker
 * trwałe przechowywanie danych (Docker volumes)
-* monitoring zasobów systemowych (CPU, RAM, sieć)
+* monitoring zasobów systemowych (CPU, RAM)
 * dashboardy w Grafanie
 * alerty na podstawie progów (np. wysokie użycie CPU)
 
@@ -43,7 +46,7 @@ docker compose up -d
 
 ## Monitoring
 
-Dane systemowe zbierane są przez Node Exporter i agregowane w Prometheusie.
+Dane systemowe zbierane są przez Node Exporter i przetrzymywane w Prometheusie.
 Grafana służy do wizualizacji metryk takich jak:
 
 * użycie CPU
